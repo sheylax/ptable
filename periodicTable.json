@@ -1,9 +1,8 @@
 {
-	"title": "Periodic-Table",
-			
+	
+		
 			"wiki": "https://en.wikipedia.org/wiki/Period%201%20element",
-			
-						"elements": [
+			"elements": [
 				{
 					"group": "",
 					"position": 0,
@@ -27,7 +26,7 @@
 					]
 				}
 			]
-		},
+		,
 		{
 			"wiki": "https://en.wikipedia.org/wiki/Period%202%20element",
 			"elements": [
@@ -1354,7 +1353,7 @@
 				}
 			]
 		}
-	],
+	,
 	"lanthanoids": [
 		{
 			"group": "Element Lanthanoid f",
@@ -1853,5 +1852,5 @@
 				3
 			]
 		}
-	} 
-		}
+	]
+}
