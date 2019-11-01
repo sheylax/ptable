@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+ 
+    <title>periodic-table</title>
+ 
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+ 
+  <body>
+ 
+      <header>
+ 
+      </header>
+ 
+      <section>
+ 
+      </section>
+ 
+    <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = 'https://sheylax.github.io/ptable/PeriodicTableJSON.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+    var periodicTable = request.response;
+    populateHeader(periodicTable);
+    showNames(periodicTable);
+    }
+    function populateHeader(jsonObj) {
+    var myH1 = document.createElement('h1');
+    myH1.textContent = jsonObj['title'];
+    header.appendChild(myH1);
+
+    }
+    
+
+
+function showNames(jsonObj) {
+     var names = jsonObj['elements'];
+  for (var i = 0; i < names.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    
+ 
+    myH2.textContent = names[i].symbol;
+    myPara1.textContent = 'name: -' +  names[i].name;
+    myPara2.textContent = 'phase: ' + names[i].phase;
+    myPara3.textContent = 'boil:' + names[i].boil;
+
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        section.appendChild(myArticle);
+  
+
+
+    } 
+}
+
+    </script>
+</body>
+</html>
