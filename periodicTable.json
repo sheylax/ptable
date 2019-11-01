@@ -1,8 +1,9 @@
 {
-	"title" : "Periodic-Table",
+	
 	"table": [
 		{
 			"wiki": "https://en.wikipedia.org/wiki/Period%201%20element",
+			"title" : "Periodic-Table",
 						"elements": [
 				{
 					"group": "",
