@@ -1,7 +1,7 @@
 {
 	"title": "Periodic-Table",
     "elements": [
-        
+        {
             "name": "Hydrogen", 
             "appearance": "colorless gas", 
             "atomic_mass": 1.008, 
@@ -31,7 +31,7 @@
             "ionization_energies": [
                 1312.0
             ]
-         
+        },  
 ]
 }
 
