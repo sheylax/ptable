@@ -1,0 +1,79 @@
+
+.container {
+    padding: 150px;
+    align-content: center;
+    margin: 0 auto;
+}
+.elements-row {
+    height: 50px;
+}
+.element-box {
+    height: 75px;
+    width: 75px;
+    border: 1px solid #3d3b3b;
+}
+
+.element-box-emtpy {
+    height: 75px;
+    width: 75px;
+}
+
+.element-symbol {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+	text-align: center;
+}
+.element-name {
+    font-size: 10px;
+    font-weight: 50;
+    position: relative;
+    color: black;
+    text-align: center;
+}
+
+.element-num {
+    font-size: 11px;
+    font-weight: 100;
+    padding: 3px;
+    float: right;
+}
+
+/* Colors */
+.cat-diatomic_nonmetal {
+    background-color: #FDC7FE;
+  }
+  .cat-noble_gas {
+    background-color: #CBECFB;
+  }
+  .cat-alkali_metal {
+    background-color: #FCD0AC;
+  }
+  .cat-alkaline_earth_metal {
+    background-color: #FFE5AA;
+  }
+  .cat-metalloid {
+    background-color: #AFFFB5;
+  }
+  .cat-polyatomic_nonmetal {
+    background-color: #D0C1FF;
+  }
+  .cat-post-transition_metal {
+    background-color: #FFFAA9;
+  }
+  .cat-transition_metal {
+    background-color: #F0FEAB;
+  }
+  .cat-lanthanide {
+    background-color: #DDFDAA;
+  }
+  .cat-actinide {
+    background-color: #CAFEA9;
+  }
+  .cat-unknown_probably_transition_metal,
+  .cat-unknown_probably_post-transition_metal,
+  .cat-unknown_probably_metalloid,
+  .cat-unknown_predicted_to_be_noble_gas,
+  .cat-unknown_but_predicted_to_be_an_alkali_metal {
+    background-color: #ddd;
+  }
